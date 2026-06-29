@@ -90,15 +90,15 @@ wb                Write binary
 
 # Reading a CSV File
 
-import csv
+# import csv
 
-# Open CSV File
-with open('students.csv', 'r') as file:
-    reader = csv.reader(file)
+# # Open CSV File
+# with open('students.csv', 'r') as file:
+#     reader = csv.reader(file)
 
-    # loops through each row 
-    for row in reader:
-        print(row)
+#     # loops through each row 
+#     for row in reader:
+#         print(row)
 
 # Lab activity add your ['RegistrationNo', 'Name', 'Gender', 'Age', 'Course', 'Score'] 
 # to the students.csv, using a dictionary csv writer
@@ -127,3 +127,5 @@ student = {
 
 with open('student.json', 'w') as file:
     json.dump(student,file,indent=4)
+
+print('JSON file created successfully')
