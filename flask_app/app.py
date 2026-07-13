@@ -1,5 +1,5 @@
 # Import flask
-from flask import Flask
+from flask import Flask, render_template
 
 # Create an Instance of a flask class
 # ''__name__" is a special variable that tells Flask where to look for resouces
@@ -27,6 +27,17 @@ def about():
 
 def contact(name):
     return f'Welcome to {name}'
+
+
+# Profile Create Dynamic Route
+@app.route('/user/<string:username>/<int:user_id>')
+
+# Defined the profile function
+def profile(username,user_id):
+    # Data passed from python to the template
+    return render_template('profile.html', username=username, user_id=user_id)
+
+# Template Inheritance (Base Template)
 
 # To Ensure your server runs only if this script is executed directly
 

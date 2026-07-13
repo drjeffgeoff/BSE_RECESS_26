@@ -25,3 +25,20 @@
 # Templates
 # What is a template?
 # Allows us to dynamically insert data in them.
+
+
+# Rendering Templates in Flask
+'''
+Modify the app.py to use the render_template function
+'''
+
+# Forms & User Input Next week
+
+# Handling POST Requests in Flask
+
+
+# Combine Route
+
+# Dynamic Pages and data manipulation
+
+# Assignment1:  Create the Login page using Flask 
